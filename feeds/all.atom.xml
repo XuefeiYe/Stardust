@@ -27,9 +27,9 @@ Q 同学做了很多的功能划分：一个 &lt;code&gt;api&lt;/code&gt; 文件
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;所以，ES 虽然也是搜索，但是在中业务的层次是和这里的 &lt;code&gt;engine&lt;/code&gt; 不同的：同样是 &lt;code&gt;search.py&lt;/code&gt;, 但 ES 下是真的搜索，其他的其实是各个爬虫的一部分；
-同样是 &lt;code&gt;job.py&lt;/code&gt;, 但 ES 下的是其他爬虫的触发器;&lt;/p&gt;
-&lt;p&gt;另一个问题是，因为是按照爬取的目标不同而进行的划分，所以努力地在爬取功能下完成各个工作，导致许多重复的工作。如果按照&lt;/p&gt;
+&lt;p&gt;所以，ES 虽然也是搜索，但是在中业务的层次是和这里的 &lt;code&gt;engine&lt;/code&gt; 不同的：同样是 &lt;code&gt;search.py&lt;/code&gt;, ES 下是真的搜索，其他的其实是各个爬虫的组件；
+同样是 &lt;code&gt;job.py&lt;/code&gt;, 各个源下的是爬虫任务，ES 下的则爬虫的触发器;&lt;/p&gt;
+&lt;p&gt;另一个问题是，因为是按照爬取的目标不同而进行的划分，所以在努力地爬取功能下完成各个工作，导致许多重复的工作。如果按照&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;爬取-&amp;gt;整理-&amp;gt;入库-&amp;gt;索引
 &lt;/pre&gt;&lt;/div&gt;
 
