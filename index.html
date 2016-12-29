@@ -41,6 +41,7 @@
 <meta property="og:image" content="http://cdn.jswh.me/6405755.jpeg">
 
   <title>Mirror Lake</title>
+
 </head>
 <body>
   <aside>
@@ -64,8 +65,11 @@
         <li><a class="sc-github" href="https://github.com/jswh" target="_blank"><i class="fa fa-github"></i></a></li>
       </ul>
     </div>
+
+
   </aside>
   <main>
+
     <nav>
       <a href="http://blog.jswh.me">    Home
 </a>
@@ -76,6 +80,41 @@
 
     </nav>
 
+
+
+<article>
+  <header>
+    <h2><a href="http://blog.jswh.me/yi-xie-zhong-gou-ti-hui.html#yi-xie-zhong-gou-ti-hui">一些重构体会</a></h2>
+    <p>
+          Posted on Thu 29 December 2016 in <a href="http://blog.jswh.me/category/yi-dian-ji-lu.html">一点记录</a>
+
+
+
+    </p>
+  </header>
+  <div>
+      <p>最近在重构多媒体服务，包括爬虫和搜索量部分。原先的代码是一个实习生 Q 同学写的，用的 python。如果抽出其中的一块代码来看，
+ Q 同学应该是一个实践的同学，代码质量还是很不错的，但是之前看的时候我还是很难理解他的编程思路。直到这次彻底的重构，才发现代码中的一些问题。
+ 这里记录下来，也是对自己的提醒。</p>
+<h4>命名</h4>
+<p>这其实是一个老生常谈的问题，而且大部分人其实都有这个意识，Q 同学在对的大部分的命名上也都在尽量选择合适词语。但是，对于工具函数的却没有一视同仁地对待。
+比如</p>
+<div class="highlight"><pre><span></span>def _l(x):
+    r = list(map(_ft, x))
+    if len(r) == 1:
+        r = r[0]
+    return r
+</pre></div>
+
+
+<p>这是一个内部函数，用来提取出爬虫中的元素，并根据获取的元素数量返回不同的数据结构。这个还是在这里爬虫数据的时候多次用到，即使不想太高级的用法，直接用
+<code>get_result_as_list_or_string</code>已经可以极大地缓解在阅读过程中返回去看这里干了什么的情况。同样的 ...</p>
+      <br>
+      <a class="btn" href="http://blog.jswh.me/yi-xie-zhong-gou-ti-hui.html#yi-xie-zhong-gou-ti-hui">    Continue reading
+</a>
+  </div>
+  <hr />
+</article>
 <article>
   <header>
     <h2><a href="http://blog.jswh.me/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html#chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi">初始化一个 Python 开发环境的正确姿势</a></h2>
@@ -275,6 +314,9 @@ Facebook 偏表达，IM 偏工具，速配偏认识。原先没有互联网的�
 
   <div class="pagination">
   </div>
+
+
+
 
     <footer>
 <p>
