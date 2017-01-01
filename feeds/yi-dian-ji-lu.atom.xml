@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mirror Lake</title><link href="http://blog.jswh.me/" rel="alternate"></link><link href="http://blog.jswh.me/feeds/yi-dian-ji-lu.atom.xml" rel="self"></link><id>http://blog.jswh.me/</id><updated>2016-12-29T04:26:00+08:00</updated><entry><title>一些重构体会</title><link href="http://blog.jswh.me/yi-xie-zhong-gou-ti-hui.html" rel="alternate"></link><published>2016-12-29T04:26:00+08:00</published><updated>2016-12-29T04:26:00+08:00</updated><author><name>jswh</name></author><id>tag:blog.jswh.me,2016-12-29:yi-xie-zhong-gou-ti-hui.html</id><summary type="html">&lt;p&gt;最近在重构多媒体服务，包括爬虫和搜索两部分。原先的代码是一个实习生 Q 同学写的，用的 python。如果抽出其中的一块代码来看，
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mirror Lake - 一点记录</title><link href="http://blog.jswh.me/" rel="alternate"></link><link href="http://blog.jswh.me/feeds/yi-dian-ji-lu.atom.xml" rel="self"></link><id>http://blog.jswh.me/</id><updated>2016-12-29T04:26:00+08:00</updated><entry><title>一些重构体会</title><link href="http://blog.jswh.me/yi-xie-zhong-gou-ti-hui.html" rel="alternate"></link><published>2016-12-29T04:26:00+08:00</published><updated>2016-12-29T04:26:00+08:00</updated><author><name>jswh</name></author><id>tag:blog.jswh.me,2016-12-29:/yi-xie-zhong-gou-ti-hui.html</id><summary type="html">&lt;p&gt;最近在重构多媒体服务，包括爬虫和搜索两部分。原先的代码是一个实习生 Q 同学写的，用的 python。如果抽出其中的一块代码来看，
+ Q 同学应该是一个重实践的同学，代码质量还是很不错的，但是之前看的时候我还是很难理解他的编程思路。直到这次彻底的重构，才发现代码中的一些问题。
+这里记录下来，也是对自己的提醒。&lt;/p&gt;
+&lt;h4&gt;命名&lt;/h4&gt;
+&lt;p&gt;这其实是一个老生常谈的问题，而且大部分人其实都有这个意识，Q 同学在对待大部分的命名上也都在尽量选择合适词汇。但是，对于工具函数却没有一视同仁。
+比如&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;def _l(x):
+    r = list(map(_ft, x))
+    if len(r) == 1:
+        r = r[0]
+    return r
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;这是一个内部函数，用来提取出爬取的元素，并根据获取的元素数量返回不同的数据结构，在爬去数据的时候多次用到。即使不想太高级的英语，直接用
+&lt;code&gt;get_result_as_list_or_string&lt;/code&gt;已经可以极大地缓解在阅读过程中返回去看这里干了什么的情况。同样的 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;最近在重构多媒体服务，包括爬虫和搜索两部分。原先的代码是一个实习生 Q 同学写的，用的 python。如果抽出其中的一块代码来看，
  Q 同学应该是一个重实践的同学，代码质量还是很不错的，但是之前看的时候我还是很难理解他的编程思路。直到这次彻底的重构，才发现代码中的一些问题。
 这里记录下来，也是对自己的提醒。&lt;/p&gt;
 &lt;h4&gt;命名&lt;/h4&gt;
@@ -49,7 +64,27 @@ Q 同学做了很多的功能划分：一个 &lt;code&gt;api&lt;/code&gt; 文件
 &lt;p&gt;又因为，去掉额外的爬取源，所以合并了爬虫和入库。&lt;/p&gt;
 &lt;h4&gt;结语&lt;/h4&gt;
 &lt;p&gt;代码是我写的，但是以后阅读和维护代码的人并不一定是我；我现在知道这里为什么这么写，一个月后未必知道。
-所以写代码的时候要多想想应该如何保持简介和逻辑的通顺，多问问我为什要这么写。&lt;/p&gt;</summary></entry><entry><title>初始化一个 Python 开发环境的正确姿势</title><link href="http://blog.jswh.me/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html" rel="alternate"></link><published>2016-12-10T17:41:00+08:00</published><updated>2016-12-10T17:41:00+08:00</updated><author><name>jswh</name></author><id>tag:blog.jswh.me,2016-12-10:chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html</id><summary type="html">&lt;p&gt;在看这篇文章的时候，我需要两个假设，以避免做过多无关的解释。&lt;/p&gt;
+所以写代码的时候要多想想应该如何保持简介和逻辑的通顺，多问问我为什要这么写。&lt;/p&gt;</content></entry><entry><title>初始化一个 Python 开发环境的正确姿势</title><link href="http://blog.jswh.me/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html" rel="alternate"></link><published>2016-12-10T17:41:00+08:00</published><updated>2016-12-10T17:41:00+08:00</updated><author><name>jswh</name></author><id>tag:blog.jswh.me,2016-12-10:/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html</id><summary type="html">&lt;p&gt;在看这篇文章的时候，我需要两个假设，以避免做过多无关的解释。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;假设读者对 &lt;a href="https://www.python.org/downloads/"&gt;Python&lt;/a&gt; 有最基本的了解，知道如何使用 &lt;a href="https://pip.pypa.io/en/stable/installing/"&gt;pip&lt;/a&gt;。并且系统环境中已经安装有 Python 和 pip。&lt;/li&gt;
+&lt;li&gt;假设读者对 &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/"&gt;virtualenv&lt;/a&gt; 有最基本的了解，知道为什么要用 virtualenv。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果假设不成立，可以跟随上面的链接和 Google 来了解。&lt;/p&gt;
+&lt;h3&gt;0x1 更换 pypi 源为豆瓣的源&lt;/h3&gt;
+&lt;p&gt;如果网络环境好的话这一步也可以不做&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir -p ~/.config/pip/
+touch ~/.config/pip/pip.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在pip.conf 文件中添加以下内容&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[global]&lt;/span&gt;
+&lt;span class="na"&gt;timeout&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;60&lt;/span&gt;
+&lt;span class="na"&gt;index-url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;https://pypi.doubanio.com/simple/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;0x2 安装 virtualenv …&lt;/h3&gt;</summary><content type="html">&lt;p&gt;在看这篇文章的时候，我需要两个假设，以避免做过多无关的解释。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;假设读者对 &lt;a href="https://www.python.org/downloads/"&gt;Python&lt;/a&gt; 有最基本的了解，知道如何使用 &lt;a href="https://pip.pypa.io/en/stable/installing/"&gt;pip&lt;/a&gt;。并且系统环境中已经安装有 Python 和 pip。&lt;/li&gt;
 &lt;li&gt;假设读者对 &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/"&gt;virtualenv&lt;/a&gt; 有最基本的了解，知道为什么要用 virtualenv。&lt;/li&gt;
@@ -102,4 +137,4 @@ source path/to/your/app/folder/bin/activate # 激活环境
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;之后就可以愉快的使用了。&lt;/p&gt;</summary></entry></feed>
+&lt;p&gt;之后就可以愉快的使用了。&lt;/p&gt;</content></entry></feed>

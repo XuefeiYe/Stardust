@@ -40,7 +40,7 @@
 <meta property="og:url" content="http://blog.jswh.me"/>
 <meta property="og:image" content="http://cdn.jswh.me/6405755.jpeg">
 
-  <title>Mirror Lake &ndash;     Category 一点记录
+  <title>Mirror Lake &ndash;     Category 日常
 </title>
 </head>
 <body>
@@ -79,71 +79,21 @@
 
 <article>
   <header>
-    <h2><a href="http://blog.jswh.me/yi-xie-zhong-gou-ti-hui.html#yi-xie-zhong-gou-ti-hui">一些重构体会</a></h2>
+    <h2><a href="http://blog.jswh.me/jswh-yuan-ni-kai-shi-yi-duan-xin-de-lu-cheng.html#jswh-yuan-ni-kai-shi-yi-duan-xin-de-lu-cheng">jswh, 愿你开始一段新的旅程</a></h2>
     <p>
-          Posted on Thu 29 December 2016 in <a href="http://blog.jswh.me/category/yi-dian-ji-lu.html">一点记录</a>
+          Posted on Sun 01 January 2017 in <a href="http://blog.jswh.me/category/ri-chang.html">日常</a>
 
 
 
     </p>
   </header>
   <div>
-      <p>最近在重构多媒体服务，包括爬虫和搜索两部分。原先的代码是一个实习生 Q 同学写的，用的 python。如果抽出其中的一块代码来看，
- Q 同学应该是一个重实践的同学，代码质量还是很不错的，但是之前看的时候我还是很难理解他的编程思路。直到这次彻底的重构，才发现代码中的一些问题。
-这里记录下来，也是对自己的提醒。</p>
-<h4>命名</h4>
-<p>这其实是一个老生常谈的问题，而且大部分人其实都有这个意识，Q 同学在对待大部分的命名上也都在尽量选择合适词汇。但是，对于工具函数却没有一视同仁。
-比如</p>
-<div class="highlight"><pre><span></span>def _l(x):
-    r = list(map(_ft, x))
-    if len(r) == 1:
-        r = r[0]
-    return r
-</pre></div>
-
-
-<p>这是一个内部函数，用来提取出爬取的元素，并根据获取的元素数量返回不同的数据结构，在爬去数据的时候多次用到。即使不想太高级的英语，直接用
-<code>get_result_as_list_or_string</code>已经可以极大地缓解在阅读过程中返回去看这里干了什么的情况。同样的 …</p>
+      <p>我是一个仪式感非常强的人，如果不做点什么来声明重要的节点，惴惴不安的情绪会始终无法散去。所以，我挺喜欢总结和展望这类文字的：写完年终总结才觉得过去的一年到此为止了；写完新年计划才认为新的一年正式开始了。</p>
+<p>二零一六年过得不怎么顺利：感情起伏不定，最终还是面临结束；个人能力的的提升趋于平缓乃至瓶颈；换了一份工作，涨薪的幅度才恰好抵过房租的涨幅。当然也会有一些进步：技能的平稳导致会有时间用现有的技能做一些产出；学会了双拼；正在为自己喜欢的产品贡献一份绵薄之力；注册了一家公司，虽然没有正式开张。总的来说，过去的一年自己有一些长进，但不大，只有心态在越来越趋于平和。20去年的总结就这样吧，除了感情的起起伏伏，其他的真是没有太多的可以回忆和记述的东西，而感情的事，不说也罢。</p>
+<p>二零一七年希望能发布一个完整的产品，并且好好地运营，希望能够上一万用户的门槛，因为不知是谁说过：如果没有运营过一个超过一万用户的产品，就不要去创业。可能也是一种仪式吧，就和铁血战士的成年礼一样，要拼杀一番。当然，这是业余时间的目标，重心还是 same，既然对她爱得深沉，那就发现她的不足并用自己的能力去填补。我相信 same 是独一无二的，她的设计不以人的生理需求出发，希望能够走得更远。 </p>
+<p>个人的能力和品质上，希望新的一年能每个月养成一两个好的小习惯 …</p>
       <br>
-      <a class="btn" href="http://blog.jswh.me/yi-xie-zhong-gou-ti-hui.html#yi-xie-zhong-gou-ti-hui">    Continue reading
-</a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="http://blog.jswh.me/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html#chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi">初始化一个 Python 开发环境的正确姿势</a></h2>
-    <p>
-          Posted on Sat 10 December 2016 in <a href="http://blog.jswh.me/category/yi-dian-ji-lu.html">一点记录</a>
-
-
-
-    </p>
-  </header>
-  <div>
-      <p>在看这篇文章的时候，我需要两个假设，以避免做过多无关的解释。</p>
-<ol>
-<li>假设读者对 <a href="https://www.python.org/downloads/">Python</a> 有最基本的了解，知道如何使用 <a href="https://pip.pypa.io/en/stable/installing/">pip</a>。并且系统环境中已经安装有 Python 和 pip。</li>
-<li>假设读者对 <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">virtualenv</a> 有最基本的了解，知道为什么要用 virtualenv。</li>
-</ol>
-<p>如果假设不成立，可以跟随上面的链接和 Google 来了解。</p>
-<h3>0x1 更换 pypi 源为豆瓣的源</h3>
-<p>如果网络环境好的话这一步也可以不做</p>
-<div class="highlight"><pre><span></span>mkdir -p ~/.config/pip/
-touch ~/.config/pip/pip.conf
-</pre></div>
-
-
-<p>在pip.conf 文件中添加以下内容</p>
-<div class="highlight"><pre><span></span><span class="k">[global]</span>
-<span class="na">timeout</span> <span class="o">=</span> <span class="s">60</span>
-<span class="na">index-url</span> <span class="o">=</span> <span class="s">https://pypi.doubanio.com/simple/</span>
-</pre></div>
-
-
-<h3>0x2 安装 virtualenv …</h3>
-      <br>
-      <a class="btn" href="http://blog.jswh.me/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html#chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi">    Continue reading
+      <a class="btn" href="http://blog.jswh.me/jswh-yuan-ni-kai-shi-yi-duan-xin-de-lu-cheng.html#jswh-yuan-ni-kai-shi-yi-duan-xin-de-lu-cheng">    Continue reading
 </a>
   </div>
 </article>
