@@ -4,13 +4,13 @@
 <head>
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="//theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="//theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="//theme/font-awesome/css/font-awesome.min.css">
 
 
-    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Mirror Lake Atom">
+    <link href="//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Mirror Lake Atom">
 
 
     <link rel="shortcut icon" href="http://cdn.jswh.me/6405755.jpeg" type="image/x-icon">
@@ -50,7 +50,7 @@
 <meta property="og:title" content="Mirror Lake"/>
 <meta property="og:description" content=""/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content=""/>
+<meta property="og:url" content="/"/>
 <meta property="og:image" content="http://cdn.jswh.me/6405755.jpeg">
 
   <title>Mirror Lake &ndash;     Category 编程实践
@@ -60,10 +60,10 @@
 <body>
   <aside>
     <div>
-      <a href="">
+      <a href="/">
         <img src="http://cdn.jswh.me/6405755.jpeg" alt="Mirror Lake" title="Mirror Lake">
       </a>
-      <h1><a href="">Mirror Lake</a></h1>
+      <h1><a href="/">Mirror Lake</a></h1>
 
 <p>stay calm like a mirror lake......</p>
       <nav>
@@ -84,14 +84,14 @@
   <main>
 
     <nav>
-      <a href="">    Home
+      <a href="/">    Home
 </a>
 
       <a href="/archives.html">Archives</a>
       <a href="/categories.html">Categories</a>
       <a href="/tags.html">Tags</a>
 
-      <a href="/feeds/all.atom.xml">    Atom
+      <a href="//feeds/all.atom.xml">    Atom
 </a>
 
     </nav>
@@ -100,9 +100,9 @@
 
 <article>
   <header>
-    <h2><a href="/zhong-shu-ju-fen-xi.html#zhong-shu-ju-fen-xi">中数据分析</a></h2>
+    <h2><a href="//zhong-shu-ju-fen-xi.html#zhong-shu-ju-fen-xi">中数据分析</a></h2>
     <p>
-          Posted on Mon 19 June 2017 in <a href="/category/bian-cheng-shi-jian.html">编程实践</a>
+          Posted on Mon 19 June 2017 in <a href="//category/bian-cheng-shi-jian.html">编程实践</a>
 
 
 
@@ -112,16 +112,16 @@
       <p>same 在前段时间更新了数据的展示形式，数据流的方式意味着决策上将要更多地向个性化的方向发展。说到个性化，那就意味着大量的用户行为数据的收集和处理，意味着原先用 MySQL 还能支撑的统计分析将不再适用。因此，开始考虑需要一套大数据处理的工具。说到大数据，一般都会自然得想到 Hadoop 系的一系列工具，从计算引擎，到存储系统，再到查询工具。Hadoop 的这一整套东西，很好很强大，但也意味着架构的复杂。</p>
 <p>作为一个之前没有接触过任何 Hadoop 系统地超新手，我们艰难得尝试了几天，最终还是选择了放弃。放弃的原因，除了复杂度之外，更是因为一种杀鸡用牛刀的感觉。即使是全量的记录 same 的访问日志，每天也不过数 GB，这样的数据量，要直接上动辄十数台机器（hdfs + Hadoop + 控制节点）的集群着实有些奢侈（费用和维护成本）。而且，公司里也基本没有对 Hadoop 体系熟悉的人，后续的知识传承也很成问题。放弃了 Hadoop，就要重新寻找这样一种简单又可扩展的替代品：架构简单 …</p>
       <br>
-      <a class="btn" href="/zhong-shu-ju-fen-xi.html#zhong-shu-ju-fen-xi">    Continue reading
+      <a class="btn" href="//zhong-shu-ju-fen-xi.html#zhong-shu-ju-fen-xi">    Continue reading
 </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="/yi-xie-zhong-gou-ti-hui.html#yi-xie-zhong-gou-ti-hui">一些重构体会</a></h2>
+    <h2><a href="//yi-xie-zhong-gou-ti-hui.html#yi-xie-zhong-gou-ti-hui">一些重构体会</a></h2>
     <p>
-          Posted on Thu 29 December 2016 in <a href="/category/bian-cheng-shi-jian.html">编程实践</a>
+          Posted on Thu 29 December 2016 in <a href="//category/bian-cheng-shi-jian.html">编程实践</a>
 
 
 
@@ -145,21 +145,21 @@
 <p>这是一个内部函数，用来提取出爬取的元素，并根据获取的元素数量返回不同的数据结构，在爬去数据的时候多次用到。即使不想太高级的英语，直接用
 <code>get_result_as_list_or_string</code>已经可以极大地缓解在阅读过程中返回去看这里干了什么的情况。同样的 …</p>
       <br>
-      <a class="btn" href="/yi-xie-zhong-gou-ti-hui.html#yi-xie-zhong-gou-ti-hui">    Continue reading
+      <a class="btn" href="//yi-xie-zhong-gou-ti-hui.html#yi-xie-zhong-gou-ti-hui">    Continue reading
 </a>
   </div>
   <hr />
 </article>
 <article>
   <header>
-    <h2><a href="/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html#chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi">初始化一个 Python 开发环境的正确姿势</a></h2>
+    <h2><a href="//chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html#chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi">初始化一个 Python 开发环境的正确姿势</a></h2>
     <p>
-          Posted on Sat 10 December 2016 in <a href="/category/bian-cheng-shi-jian.html">编程实践</a>
+          Posted on Sat 10 December 2016 in <a href="//category/bian-cheng-shi-jian.html">编程实践</a>
 
 
           &#8226;     Tagged with
 
-              <a href="/tag/python.html">python</a>,              <a href="/tag/virtualenv.html">virtualenv</a>
+              <a href="//tag/python.html">python</a>,              <a href="//tag/virtualenv.html">virtualenv</a>
     </p>
   </header>
   <div>
@@ -185,7 +185,7 @@ touch ~/.config/pip/pip.conf
 
 <h3>0x2 安装 virtualenv …</h3>
       <br>
-      <a class="btn" href="/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html#chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi">    Continue reading
+      <a class="btn" href="//chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html#chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi">    Continue reading
 </a>
   </div>
 </article>
@@ -205,6 +205,12 @@ touch ~/.config/pip/pip.conf
   <a rel="license"
      href="http://creativecommons.org/licenses/by-sa/4.0/"
      target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+         src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
   </a>
 </p>    </footer>
   </main>
@@ -217,7 +223,7 @@ touch ~/.config/pip/pip.conf
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " Mirror Lake ",
-  "url" : "",
+  "url" : "/",
   "image": "http://cdn.jswh.me/6405755.jpeg",
   "description": ""
 }
