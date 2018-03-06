@@ -43,18 +43,25 @@
     <!-- Microsoft EDGE -->
     <meta name="msapplication-TileColor" content="#333">
 
-    <meta name="author" content="jswh" />
-    <meta name="description" content="" />
+<meta name="author" content="jswh" />
+<meta name="description" content="对于第一个命令要写什么我想了很久。一开始我想写文件管理相关的命令，笔记对于一个操作系统的使用来说，对文件的增删改查可能是最最常用的，对应windows上就是资源管理器的使用。后来我又觉得，对于一个刚启动的系统，用户面对跳动的光标，第一件要做的事就是登录，也许介绍用户系统和用户相关命令会更好一些。这样犹豫的原因在于，每个部分其实都很重要，有些交织，但功能组件又相对独立。 想想我们拿到一个不熟悉的家电，比如第一次使用小米扫地机器人的时候，我们我会做什么，如何才能让他好好工作。没错，就是看说明书。我会有这样的由于，那是因为我已经对 Linux 比较熟悉了，但如果我事第一次用，漆黑的屏幕，我想我应该会希望有个说明书来告诉我，我是谁，我在哪，我要到哪里去。 这个说明书，就是man命令，manual 的缩写；手册，也就是说明书。" />
+<meta name="keywords" content="Linux, man">
+
 <meta property="og:site_name" content="Mirror Lake"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="Mirror Lake"/>
-<meta property="og:description" content=""/>
+<meta property="og:title" content="第一件事是看手册"/>
+<meta property="og:description" content="对于第一个命令要写什么我想了很久。一开始我想写文件管理相关的命令，笔记对于一个操作系统的使用来说，对文件的增删改查可能是最最常用的，对应windows上就是资源管理器的使用。后来我又觉得，对于一个刚启动的系统，用户面对跳动的光标，第一件要做的事就是登录，也许介绍用户系统和用户相关命令会更好一些。这样犹豫的原因在于，每个部分其实都很重要，有些交织，但功能组件又相对独立。 想想我们拿到一个不熟悉的家电，比如第一次使用小米扫地机器人的时候，我们我会做什么，如何才能让他好好工作。没错，就是看说明书。我会有这样的由于，那是因为我已经对 Linux 比较熟悉了，但如果我事第一次用，漆黑的屏幕，我想我应该会希望有个说明书来告诉我，我是谁，我在哪，我要到哪里去。 这个说明书，就是man命令，manual 的缩写；手册，也就是说明书。"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://blog.jswh.me"/>
+<meta property="og:url" content="http://blog.jswh.me/drafts/di-yi-jian-shi-shi-kan-shou-ce.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-12-22 22:03:00+08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://blog.jswh.me/author/jswh.html">
+<meta property="article:section" content="Linux漫谈"/>
+<meta property="article:tag" content="Linux"/>
+<meta property="article:tag" content="man"/>
 <meta property="og:image" content="http://cdn.jswh.me/6405755.jpeg">
 
-  <title>Mirror Lake &ndash;     Tag Linux
-</title>
+  <title>Mirror Lake &ndash; 第一件事是看手册</title>
 
 </head>
 <body>
@@ -96,35 +103,74 @@
 
     </nav>
 
-
-
-<article>
+<article class="single">
   <header>
-    <h2><a href="http://blog.jswh.me/zui-hao-de-linux-fa-xing-ban.html#zui-hao-de-linux-fa-xing-ban">最好的 Linux 发行版</a></h2>
+      
+    <h1 id="di-yi-jian-shi-shi-kan-shou-ce">第一件事是看手册</h1>
     <p>
-          Posted on Sun 10 December 2017 in <a href="http://blog.jswh.me/category/linuxman-tan.html">Linux漫谈</a>
+          Posted on Fri 22 December 2017 in <a href="http://blog.jswh.me/category/linuxman-tan.html">Linux漫谈</a>
 
 
-          &#8226;     Tagged with
-
-              <a href="http://blog.jswh.me/tag/linux.html">Linux</a>,              <a href="http://blog.jswh.me/tag/wsl.html">WSL</a>,              <a href="http://blog.jswh.me/tag/winsows.html">Winsows</a>,              <a href="http://blog.jswh.me/tag/subsystem.html">Subsystem</a>
     </p>
   </header>
+
+
   <div>
-      <p>标题是个玩笑话。</p>
-<p>Linux 作为一个操作系统，在服务器领域尤其是 web 服务器来说，一直是一个很好的选择，相对于 Windows server 高额的授权费用，免费开源的 Linux 更受个人和有开发能力的公司的青睐。甚至在市场份额上，还略微高于 Windows Server。但在桌面端，似乎一直是 geek 的玩物，哪怕是 web 开发，有钱的直接上 MacOS，没钱的想方设法组黑苹果。除了驱动不完善之外（现在情况已经大大改善了），最主要的还是 Linux 的桌面端应用相比其他两个操作系统生态来说，还是太少太少。一些仅有的软件，对比之下质量也只是勉强可用的地步。</p>
-<p>但是，作为一个web开发者，不熟悉 Linux 系统，可以说是一个重大的技能缺陷。因为不论你怎么躲，都躲不开 Linux 系统的使用。哪怕你用的的 .Net，难道你就不看看 <a href="https://github.com/dotnet/core">.Net …</a></p>
-      <br>
-      <a class="btn" href="http://blog.jswh.me/zui-hao-de-linux-fa-xing-ban.html#zui-hao-de-linux-fa-xing-ban">    Continue reading
-</a>
+    <p>对于第一个命令要写什么我想了很久。一开始我想写文件管理相关的命令，笔记对于一个操作系统的使用来说，对文件的增删改查可能是最最常用的，对应windows上就是资源管理器的使用。后来我又觉得，对于一个刚启动的系统，用户面对跳动的光标，第一件要做的事就是登录，也许介绍用户系统和用户相关命令会更好一些。这样犹豫的原因在于，每个部分其实都很重要，有些交织，但功能组件又相对独立。</p>
+<p>想想我们拿到一个不熟悉的家电，比如第一次使用小米扫地机器人的时候，我们我会做什么，如何才能让他好好工作。没错，就是看说明书。我会有这样的由于，那是因为我已经对 Linux 比较熟悉了，但如果我事第一次用，漆黑的屏幕，我想我应该会希望有个说明书来告诉我，我是谁，我在哪，我要到哪里去。</p>
+<p>这个说明书，就是man命令，manual 的缩写；手册，也就是说明书。</p>
   </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://blog.jswh.me/tag/linux.html">Linux</a>
+      <a href="http://blog.jswh.me/tag/man.html">man</a>
+    </p>
+  </div>
+
+
+
+    <div class="addthis_relatedposts_inline">
+
+
+
+<div id="SOHUCS"  sid="第一件事是看手册"></div>
+<script type="text/javascript">
+(function(){ 
+    var appid = 'cytm8uooo'; 
+    var conf = 'prod_8f0fdacdbce8936c4f8c28f5b8f5b56f';
+    var width = window.innerWidth || document.documentElement.clientWidth;
+    if (width < 960) {
+        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+    } else {
+        var loadJs = function (d, a) {
+            var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+            var b = document.createElement("script");
+            b.setAttribute("type", "text/javascript");
+            b.setAttribute("charset", "UTF-8");
+            b.setAttribute("src", d);
+            if (typeof a === "function") {
+                if (window.attachEvent) {
+                    b.onreadystatechange = function () {
+                        var e = b.readyState;
+                        if (e === "loaded" || e === "complete") {
+                            b.onreadystatechange = null;
+                            a()
+                        }
+                    }
+                } else {
+                    b.onload = a
+                }
+            }
+            c.appendChild(b)
+        };
+        loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+            window.changyan.api.config({ appid: appid, conf: conf })
+        });
+    }
+})();
+</script>
+
 </article>
-
-  <div class="pagination">
-  </div>
-
-
-
 
     <footer>
 <p>
