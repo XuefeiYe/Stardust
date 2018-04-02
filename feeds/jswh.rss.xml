@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Mirror Lake - jswh</title><link>http://blog.jswh.me/</link><description>stay calm like a mirror lake......</description><lastBuildDate>Sun, 25 Mar 2018 11:10:00 +0800</lastBuildDate><item><title>死亡</title><link>http://blog.jswh.me/si-wang.html</link><description>&lt;p&gt;有一个画面在脑中如金属上的刻痕一般深刻：夏蝉鸣得人心烦躁，炙烤下的水泥地面腾起看不见的雾气扭曲了视线，瘦弱的男孩半黑不白，穿装背心短裤，从二楼的窗户探出大半个身子凝望着地面。如果从这里跳下去，是不是就死了？这可能是我第一次，对死亡这件事产生思考。&lt;/p&gt;
+&lt;p&gt;死了会怎么样，死了似乎也不会怎么样。死了就死了吧。也许是小孩子尚不懂得死亡的意义，但这个基调却在心里持续了很久。死了，也就死了吧。&lt;/p&gt;
+&lt;p&gt;第二次对死亡的印象是爷爷去世的时候。看着爷爷安静地躺着，除了因大量失血而苍白的嘴唇外，看起来不过就是睡着了。姑姑抵达时见到此景一声哭腔喊出，却被奶奶喝住了：现在还不能哭。姑姑收住了哭声，我没看清是否流泪。但守灵当夜，我确实清楚得看到，父亲站门口台阶之上，肩膀耸动，手抹着眼睛。这是我第一次看到父亲哭泣。&lt;/p&gt;
+&lt;p&gt;我跑进灵堂，看着安静的躺着的爷爷。守灵的亲戚奶奶对我说再看看吧，再看看吧，以后就再也看不到了。我回忆起每次疯玩一圈回来，都要把爷爷那个被茶渍染成深褐色的大号透明塑料茶杯里的茶水喝个精光，爷爷嘟囔着我每次都喝光不剩然后默默续上水。我终于大哭了起来。一直到现在，关于爷爷的最深的印象就是那个大茶杯，只是后来再也没有从那样的大杯子里喝过茶水了。&lt;/p&gt;
+&lt;p&gt;(于飞往昆明航班之上)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Sun, 25 Mar 2018 11:10:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2018-03-25:/si-wang.html</guid></item><item><title>最好的 Linux 发行版</title><link>http://blog.jswh.me/zui-hao-de-linux-fa-xing-ban.html</link><description>&lt;p&gt;标题是个玩笑话。&lt;/p&gt;
+&lt;p&gt;Linux 作为一个操作系统，在服务器领域尤其是 web 服务器来说，一直是一个很好的选择，相对于 Windows server 高额的授权费用，免费开源的 Linux 更受个人和有开发能力的公司的青睐。甚至在市场份额上，还略微高于 Windows Server。但在桌面端，似乎一直是 geek 的玩物，哪怕是 web 开发，有钱的直接上 MacOS，没钱的想方设法组黑苹果。除了驱动不完善之外（现在情况已经大大改善了），最主要的还是 Linux 的桌面端应用相比其他两个操作系统生态来说，还是太少太少。一些仅有的软件，对比之下质量也只是勉强可用的地步。&lt;/p&gt;
+&lt;p&gt;但是，作为一个web开发者，不熟悉 Linux 系统，可以说是一个重大的技能缺陷。因为不论你怎么躲，都躲不开 Linux 系统的使用。哪怕你用的的 .Net，难道你就不看看 &lt;a href="https://github.com/dotnet/core"&gt;.Net …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Sun, 10 Dec 2017 11:24:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2017-12-10:/zui-hao-de-linux-fa-xing-ban.html</guid><category>Linux</category><category>WSL</category><category>Winsows</category><category>Subsystem</category></item><item><title>中数据分析</title><link>http://blog.jswh.me/zhong-shu-ju-fen-xi.html</link><description>&lt;p&gt;same 在前段时间更新了数据的展示形式，数据流的方式意味着决策上将要更多地向个性化的方向发展。说到个性化，那就意味着大量的用户行为数据的收集和处理，意味着原先用 MySQL 还能支撑的统计分析将不再适用。因此，开始考虑需要一套大数据处理的工具。说到大数据，一般都会自然得想到 Hadoop 系的一系列工具，从计算引擎，到存储系统，再到查询工具。Hadoop 的这一整套东西，很好很强大，但也意味着架构的复杂。&lt;/p&gt;
+&lt;p&gt;作为一个之前没有接触过任何 Hadoop 系统地超新手，我们艰难得尝试了几天，最终还是选择了放弃。放弃的原因，除了复杂度之外，更是因为一种杀鸡用牛刀的感觉。即使是全量的记录 same 的访问日志，每天也不过数 GB，这样的数据量，要直接上动辄十数台机器（hdfs + Hadoop + 控制节点）的集群着实有些奢侈（费用和维护成本）。而且，公司里也基本没有对 Hadoop 体系熟悉的人，后续的知识传承也很成问题。放弃了 Hadoop，就要重新寻找这样一种简单又可扩展的替代品：架构简单 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Mon, 19 Jun 2017 17:03:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2017-06-19:/zhong-shu-ju-fen-xi.html</guid></item><item><title>我</title><link>http://blog.jswh.me/wo.html</link><description>&lt;p&gt;从14年一月份进入百姓网开始全职实习算起，参加工作也三年又两个月了。去年后半年从百姓网离职，来到  same，希望能为我喜欢的产品出一点力。但是六个月过去，虽然 same 给了很高的自由度，也没有太大的作为。除了产品上的问题之外，可能还是作为技术人的能力并不如自己所想的那样，已经到了可以做出哪怕些微的创新的地步。所以最近的两三个月一直都在感到焦虑，重新感到了工作之初时那种觉得自己什么都不会的感觉。不过区别是，彼时觉得自己是萌新，学习能力有自信，那种认为自己什么都不会的感觉可是强大的学习动力。而此时则是短暂的膨胀期之后的幡然醒悟，是一种失落。&lt;/p&gt;
+&lt;p&gt;我很喜欢编程。准确的说，我喜欢所有和创造有关的事物，讨厌重复劳动。可惜本身手残，小时候也没有条件去接受艺术的熏陶。好在，有编程这个纯粹脑力的创造活动。怀着一腔热爱进入这个行业，但从一开始工作，就对自己的非科班出身的经历耿耿于怀，总觉得心里很慌。可真的去尝试学习的时候，则感觉那些东西在工作中真的很难用到，理解一些基本概念后就不怎么愿意花时间去做练习巩固，然后心里依然很慌。&lt;/p&gt;
+&lt;p&gt;直到去年接近年末的时候，才想明白，心慌的原因并不是不会，而是不知道自己究竟会什么，或者说没有什么东西来证明自己会什么。&lt;/p&gt;
+&lt;p&gt;对自己只有模糊的感觉：能力水平还可以，正确理解业务并实现以及处理常规的性能问题都没事问题；技术的深度不行，深入底层之后比较无力；广度还可以，半个全栈 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Mon, 20 Feb 2017 04:26:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2017-02-20:/wo.html</guid></item><item><title>一个博客的诞生</title><link>http://blog.jswh.me/yi-ge-bo-ke-de-dan-sheng.html</link><description>&lt;p&gt;题目有些标题党了，其实只是想聊一下自己的用的&lt;a href="https://github.com/jswh/jswh.github.io"&gt;博客程序&lt;/a&gt;，因为有人留言说博客打开很快。老实说，这东西其实够不上“程序”，因为只是两三个脚本配合着一些现成的工具，做了一键部署罢了。&lt;/p&gt;
+&lt;p&gt;我对用 gh-pages 做博客一直有一点怨念，觉得 Hexo 之类的都太麻烦：先要安装执行环境，然后安装生成器，然后一大堆的配置文件，部署的时候还要反复的敲命令，clean、generate、deploy之类的。但是另一方面还是，还是很想用 gh-pages 做博客。除了免费速度也不错之外，最主要的还是 git 版本管理的特性，以及可以直接用自己喜欢的编辑器来编辑。各个生成器对 markdown 之类的标记语法也都支持得比较好，不用像在网页上写一样格式不断调。可能真的是到了&lt;a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html"&gt;阮一峰老师说的博客三阶段&lt;/a&gt;的最后一阶段了，想要的就是一个简单快捷的记录和发布文字的地方。&lt;/p&gt;
+&lt;p&gt;但是我一直都没有找到这样的 gh-pages 生成程序。其实最理想的情况是直接一个单页应用， 基于 github 提供的 API 来获取文章的内容，前端渲染。自己也尝试着 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Sat, 04 Feb 2017 04:26:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2017-02-04:/yi-ge-bo-ke-de-dan-sheng.html</guid></item><item><title>个人成长与工作</title><link>http://blog.jswh.me/ge-ren-cheng-chang-yu-gong-zuo.html</link><description>&lt;p&gt;其实12点不到就睡了，但是一直睡不着，又不想写代码，担心一写又到早上了。所以还是来写写鸡汤吧。&lt;/p&gt;
+&lt;p&gt;从实习算起，参加工作也又三年了，对于工作与个人成长的关系也算是有自己的一点理解。恰好之前与人讨论了一番，感觉值得梳理一下。&lt;/p&gt;
+&lt;p&gt;首先，我觉得工作是公事而个人的成长是私事，企业有义务帮助员工适应工作环境(对于实习生来说这包括必备的工作技能)，但并不对员工的个人成长负有任何责任。所以，一般培训一项是作为福利存在的。至于人才培养计划之类的，那是企业在对人力资源的成本衡量后的结果。如果引进人才的成本比较低的话，我想没有企业会花这笔钱。明确这一点之后，才明白为什么渡过了最初期的适应阶段之后会觉得自己不再长进了，因为一旦你可以胜任工作之后没有人会再催着你学了；如果出现一项你无法胜任的工作，很多时候都是安排有能力的人去做。&lt;/p&gt;
+&lt;p&gt;从这里也可以看出，为什么说八点到十点的两个小时，才决定了一个人发展：因为工作时间，企业对你的要求就是重复你已有的技能，而你却想从中获取新的技能，那可不是缘木求鱼；只有工作后的自我学习，才是真正属于自己的，习得新的技能的时间。如果用这些时间获取了新的技能，而下次出现了需要该项技能的业务，那不就可以在其他人中脱颖而出了么。想象一下，一个流水线上的工人，如果在课后自学了机器的运行原理；在某次机器故障，所有人都无所适从的时候，试着解决了问题，你觉得老板会不会考虑安排他去跟着老师傅学习机修？&lt;/p&gt;
+&lt;p&gt;当然，这种机会是可遇而不可求的，所以称为机遇.而我们能做的是在做好准备的同时 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Mon, 02 Jan 2017 01:39:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2017-01-02:/ge-ren-cheng-chang-yu-gong-zuo.html</guid></item><item><title>开始一段新的旅程</title><link>http://blog.jswh.me/kai-shi-yi-duan-xin-de-lu-cheng.html</link><description>&lt;p&gt;我是一个仪式感非常强的人，如果不做点什么来声明重要的节点，惴惴不安的情绪会始终无法散去。所以，我挺喜欢总结和展望这类文字的：写完年终总结才觉得过去的一年到此为止了；写完新年计划才认为新的一年正式开始了。&lt;/p&gt;
+&lt;p&gt;二零一六年过得不怎么顺利：感情起伏不定，最终还是面临结束；个人能力的提升趋于平缓乃至瓶颈；换了一份工作，涨薪的幅度刚抵过房租的涨幅。当然也会有一些进步：技能的平稳导致会有时间用现有的技能做一些产出；学会了双拼；正在为自己喜欢的产品贡献一份绵薄之力；注册了一家公司，虽然没有正式开张。总的来说，过去的一年自己有一些长进，但不大，只有心态在越来越趋于平和。去年的总结就这样吧，除了感情的起起伏伏，其他真是没有太多可以回忆和记述的东西，至于感情的事，不说也罢。&lt;/p&gt;
+&lt;p&gt;二零一七年希望能发布一个完整的产品，并且好好地运营，可以够上一万用户的门槛，因为不知是谁说过：如果没有运营过一个超过一万用户的产品，就不要去创业。可能也是一种仪式吧，就和铁血战士的成年礼一样，要拼杀一番。当然，这是业余时间的目标，重心还是 same，既然对她爱得深沉，那就发现她的不足并用自己的能力去填补。我相信 same 是独一无二的，她的设计不以人的生理需求出发，希望能够走得更远。 &lt;/p&gt;
+&lt;p&gt;个人的能力和品质上，希望新的一年能每个月养成一两个好的小习惯 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Sun, 01 Jan 2017 15:27:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2017-01-01:/kai-shi-yi-duan-xin-de-lu-cheng.html</guid></item><item><title>一些重构体会</title><link>http://blog.jswh.me/yi-xie-zhong-gou-ti-hui.html</link><description>&lt;p&gt;最近在重构多媒体服务，包括爬虫和搜索两部分。原先的代码是一个实习生 Q 同学写的，用的 python。如果抽出其中的一块代码来看，
+ Q 同学应该是一个重实践的同学，代码质量还是很不错的，但是之前看的时候我还是很难理解他的编程思路。直到这次彻底的重构，才发现代码中的一些问题。
+这里记录下来，也是对自己的提醒。&lt;/p&gt;
+&lt;h4&gt;命名&lt;/h4&gt;
+&lt;p&gt;这其实是一个老生常谈的问题，而且大部分人其实都有这个意识，Q 同学在对待大部分的命名上也都在尽量选择合适词汇。但是，对于工具函数却没有一视同仁。
+比如&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;def _l(x):
+    r = list(map(_ft, x))
+    if len(r) == 1:
+        r = r[0]
+    return r
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;这是一个内部函数，用来提取出爬取的元素，并根据获取的元素数量返回不同的数据结构，在爬取数据的时候多次用到。即使不用太高级的英语，直接用
+&lt;code&gt;get_result_as_list_or_string&lt;/code&gt;已经可以极大地缓解在阅读过程中返回去看这里干了什么的情况。同样的 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Thu, 29 Dec 2016 04:26:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2016-12-29:/yi-xie-zhong-gou-ti-hui.html</guid></item><item><title>初始化一个 Python 开发环境的正确姿势</title><link>http://blog.jswh.me/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html</link><description>&lt;p&gt;在看这篇文章的时候，我需要两个假设，以避免做过多无关的解释。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;假设读者对 &lt;a href="https://www.python.org/downloads/"&gt;Python&lt;/a&gt; 有最基本的了解，知道如何使用 &lt;a href="https://pip.pypa.io/en/stable/installing/"&gt;pip&lt;/a&gt;。并且系统环境中已经安装有 Python 和 pip。&lt;/li&gt;
+&lt;li&gt;假设读者对 &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/"&gt;virtualenv&lt;/a&gt; 有最基本的了解，知道为什么要用 virtualenv。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果假设不成立，可以跟随上面的链接和 Google 来了解。&lt;/p&gt;
+&lt;h3&gt;0x1 更换 pypi 源为豆瓣的源&lt;/h3&gt;
+&lt;p&gt;如果网络环境好的话这一步也可以不做&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir -p ~/.config/pip/
+touch ~/.config/pip/pip.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在pip.conf 文件中添加以下内容&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[global]&lt;/span&gt;
+&lt;span class="na"&gt;timeout&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;60&lt;/span&gt;
+&lt;span class="na"&gt;index-url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;https://pypi.doubanio.com/simple/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;0x2 安装 virtualenv …&lt;/h3&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Sat, 10 Dec 2016 17:41:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2016-12-10:/chu-shi-hua-yi-ge-python-kai-fa-huan-jing-de-zheng-que-zi-shi.html</guid><category>python</category><category>virtualenv</category></item><item><title>回归社交</title><link>http://blog.jswh.me/hui-gui-she-jiao.html</link><description>&lt;p&gt;之前在知乎一个关于外国人吃的问题下面，一个答主描述国外的“约饭“不像国内一样，不是真的是以吃为重点，而是以吃为由头，一群人聚在一起聊天，食物只是调剂。
+同样是约饭，在他们看来不过社交的一种形式。似乎社交就是聊天，或者说交流。可是交流本身并不能构成社交。&lt;/p&gt;
+&lt;p&gt;互联网时代的社交是怎样的呢？以 Facebook 和 Twitter 为代表的点赞，以微信为代表的 IM 还是各种速配应用？这些似乎是又不全是社交。
+Facebook 偏表达，IM 偏工具，速配偏认识。原先没有互联网的社交是怎样的呢？对于熟人社交，我们起个由头，约个时间，组织活动，交流各自见闻，回忆回忆往昔，
+男人们讨论时事， 女人们唠叨家庭。对于陌生人社交，我们参加一个公共活动（桌游、酒吧、音乐会等等），因为某个特质而欣赏某人，搭讪，聊天的时候展现自己，观察对方。
+可能留下联系方式，期待后续的交流。&lt;/p&gt;
+&lt;p&gt;熟人社交，即使来到了线上 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Wed, 30 Nov 2016 06:00:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2016-11-30:/hui-gui-she-jiao.html</guid></item><item><title>自学指南 Flex &amp; Bison</title><link>http://blog.jswh.me/zi-xue-zhi-nan-flex-bison.html</link><description>&lt;p&gt;因为公司在用 phalcon，这种 c 扩展的框架 IDE 没有办法补全，所以想写一个把 zephir 转译成 PHP IDE Helper 的东西。本来想直接 Reflection 取一下类信息就好了，奈何最终效果不理想，本来 &lt;a href="https://zephir-lang.com/"&gt;Zephir&lt;/a&gt; 中有的很多信息都丢掉了，注释也全部没有。所以还是要用 passer 转译。  &lt;/p&gt;
+&lt;p&gt;只能说兴趣果然是最好的老师。之前编译原理看三段打瞌睡，死活读不下去，这下却是兴致满满了。只是Flex、Bison入门资料太少，网上写的那些文章都是浅尝辄止，完全没有可实践性。读手册又太过乏味。&lt;/p&gt;
+&lt;p&gt;看来看去，还是&lt;a href="http://web.iitd.ac.in/~sumeet/flex__bison.pdf"&gt;动物书的 Flex &amp;amp; Bison&lt;/a&gt; 读起来舒服。&lt;/p&gt;
+&lt;p&gt;对于词法分析语法分析完全没有概念的同学，可以先看看&lt;a href="http://www.capsl.udel.edu/courses/cpeg421/2012/slides/Tutorial-Flex_Bison.pdf"&gt;这个 PDF&lt;/a&gt; 了解一下，再读动物书会好一些，不然有些没头没脑。内容基本和书里的第一章重合，但简单介绍了一下 Flex …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Wed, 12 Oct 2016 09:33:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2016-10-12:/zi-xue-zhi-nan-flex-bison.html</guid></item><item><title>20161004</title><link>http://blog.jswh.me/20161004.html</link><description>&lt;p&gt;大半夜的睡不着。一半是因为老家秋天的蚊子，大个，嗡嗡声能达数个分呗，一口一个大包；另一半还是每次回家都止不住的沮丧程序。看着年久失修，墙壁霉变剥落的房子；年老枯瘦依旧满面愁容的奶奶；年近七十依然紧闭大门外出劳作的外公外婆；满面风尘的舅舅，不沮丧也难。  &lt;/p&gt;
+&lt;p&gt;想到车房妻子俱全的大哥，静待二哥结婚越活越年轻的姑父母，以及刚在上海买房的二哥，想想自己的工资与上海房价的比例，沮丧更胜之前。  &lt;/p&gt;
+&lt;p&gt;就在几天前，还对朋友谆谆教导：最重要的不是别人有什么，而是你自己想要什么。当自己遇到了同样的境地，却也还是忍不住涌起各种情绪。不论是因为别人拥有的生活之艰还是生活之幸。  &lt;/p&gt;
+&lt;p&gt;熬了一个半夜，看完了《从你的全世界路过》。之前并没有了解过作者，只是最近电影上映，亚马逊的 kindle 包月服务又能免费借阅，乘着家里没网，随便读读。也许是很久没有读这样的文字了，矫情的情绪弥漫到每个毛孔，又说不清楚矫情什么。现在，我已经完全记不得书里的任何一个故事了，只有那种情绪转化成忧伤挥之不去，只能呓语。&lt;/p&gt;
+&lt;p&gt;张嘉佳是幸福的，不论如何他还有故事有酒，他还有朋友，不管故事的真实度几分。我不会喝酒，也没有他那样的朋友。但我也是幸福的，父母俱在身体健康，有一只顽皮的小猫 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Tue, 04 Oct 2016 04:26:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2016-10-04:/20161004.html</guid></item><item><title>jswh 会 jswh</title><link>http://blog.jswh.me/jswh-hui-jswh.html</link><description>&lt;p&gt;乐空空上两个版本周期中，抛开所有业务上的事，把我自己认为乐空空在 Laravel 上应该改的基础架构都改了。在快接近尾声的时候，发现自己似乎已经没什么想要做的事了。这个时候已经开始焦虑了：我绝的乐空空应该还有还有很多事要做，为什么到这里就没事可做了呢？我的能力到头了或者这个产品目前到头了。刚好这时候版本开发出现了延误，闲而又闲之下就琢磨，越琢磨越觉得现在的开发流程有问题，但觉得自己不出在管理的职位上，并不应该去管理这些事情。一来感觉无事可做，而来对产品没信心，三来觉得无力改变现状，所以看待什么都很消极。&lt;/p&gt;
+&lt;p&gt;向前辈咨询，被领导谈话。经过各种各样的梳理和解压，脑子渐渐冷静下来。再次慢慢回想这些事情，确实整个团队是有一些问题，但出现那样的强烈的负面情绪，问题还是在自己身上。本质的原因还是对自己能力的怀疑。在有事可以忙碌的时候，精神专注在解决问题上，没有经历去考虑这些问题，但一旦闲下来，就会不停地想：我到底掌握了那些东西？掌握到多少程度？我到底可以解决多大程度问题？我解决的问题到底价值几何？我到底价值几何？&lt;/p&gt;
+&lt;p&gt;有这些疑问的原因其实一直都很清楚。第一，我一直耿耿于怀自己非专业的出生，觉得自己在很多基础的问题上掌握不好；第二，在没有考试和分数之后，已经失去了对自己能力的衡量方式。问题很明确，但是一直都没有很明确的办法。&lt;/p&gt;
+&lt;p&gt;也做过很多目的并不明确的尝试。比如做很多个人项目 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Sun, 10 Jul 2016 04:12:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2016-07-10:/jswh-hui-jswh.html</guid></item><item><title>为什么写博客</title><link>http://blog.jswh.me/wei-shi-yao-xie-bo-ke.html</link><description>&lt;p&gt;凌晨四点不睡觉，大概是觉得自己还有该做的事没有做完。毕竟这对与我来可能会是一个影响较大的决定。&lt;/p&gt;
+&lt;h3&gt;目的驱动的人&lt;/h3&gt;
+&lt;p&gt;一直都认为自己是一个强烈的目的驱动的人。如果做一件事而不知道为什么便无法投入，也就无法坚持并做好。&lt;br&gt;
+所以每当自己决定要做一件事情的时候，就要为这件事找一个意义出来。然而，今天仔细思考目的和作用的区别时候，才醒悟为什么很多自认明明很有意义的事情，却总是没法好好坚持下来。&lt;br&gt;
+因为我是一个强烈的目的驱动的人。&lt;br&gt;
+比如说写博客这件事吧。当我决定要好好写博客的时候，我会为这件事找个意义。写博客可以记录自己学习和生活的经历；可以把自己的所思所想归档；写作是一种系统化自己思想的过程。所以我要好好写博客。&lt;br&gt;
+这是自欺欺人。所有的这些都是写博客的作用，而不是写博客的目的。很多时候想要做一件事，却不知道为什么要做一件事，便把做了这件事的作用或者说好处当做自己目的。以此为之的时候，内心便不再对自己所做的事抱有信念。所谓大道理我都懂，可是臣妾做不到啊。&lt;br&gt;
+想清楚目的时候，写博客便只是一种手段了。我希望把自己的所思所想归档，这是我的目的，而写博客只是达成目的的一种手段。因为是对目的保持的注意力，写博客本身便不会成为一种煎熬。  &lt;/p&gt;
+&lt;h3&gt;直面内心的阴暗&lt;/h3&gt;
+&lt;p&gt;但是很多时候，做一件的目的是不纯的。每当此时，就会给自己一个冠冕堂皇的理由。而这个理由又往往是从作用挑拣出来的好的部分。再次达到自欺欺人的目的。&lt;br&gt;
+还是写博客这件事。我知道确实有很多人写博客仅仅是为了记录，但如&lt;a href="http://jswh.me/#/single/docs/高速缓冲存储器/输入与输出.md"&gt;上一篇&lt;/a&gt;所述 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Fri, 01 Jul 2016 06:00:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2016-07-01:/wei-shi-yao-xie-bo-ke.html</guid></item><item><title>输入与输出</title><link>http://blog.jswh.me/shu-ru-yu-shu-chu.html</link><description>&lt;p&gt;最近一直在思考关于信息的输入与输出的问题。  &lt;/p&gt;
+&lt;p&gt;每天，我们都在接受大量的信息。以我自己来说，微信、微博、知乎这些碎片化的；书籍、教程，公开课，MOOC这些系统化的。并且，花在前者中的时间越来越多，在每天所获取的信息中占的比重越来越大。每天都在接受海量的信息，可是躺在床上睡不着的时候却总是无事可想。（也许也不错，越想越睡不着）  &lt;/p&gt;
+&lt;p&gt;另一个感受就是无事可写。  &lt;/p&gt;
+&lt;p&gt;我不喜欢用博客做笔记，尤其是把别人写过的东西再写一遍。复制粘贴然后当做自己的产出，那真是一件很无聊的事。文笔不好，所以也不喜欢写太多的随笔记录；个人习惯也不喜欢公开私人生活，所以几乎不写这类的博客。那么，写些什么呢。以前的内容通常都是思考和总结，读书然后化到自己的生活中，出现自己的体会，再慢慢地转化成思索，最后输出成文字。  &lt;/p&gt;
+&lt;p&gt;而现在，我觉得没有什么可以写了。有的时候会有一些简短的思索出现，但是能成型的文字，通常仅仅足够发一个朋友圈，再多也没有了。碎片化的输入，导致了碎片化的输出。  &lt;/p&gt;
+&lt;p&gt;在我的观念中，信息的输出是输入知识化的体现。所谓知识化，就是指经过个人对输入的信息经过加工，形成可以传递下去的经验或见解。而其中又可分整理型的和创造型的输出。而碎片化输入的零星内容，在没有相关的知识背景的情况下很难作为归纳总结的对象 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">jswh</dc:creator><pubDate>Wed, 15 Jun 2016 22:00:00 +0800</pubDate><guid isPermaLink="false">tag:blog.jswh.me,2016-06-15:/shu-ru-yu-shu-chu.html</guid></item></channel></rss>
